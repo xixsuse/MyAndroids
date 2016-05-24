@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.j" >
+    <!-- 高德地图 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--通讯录-->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/myTheme_actionBar" >
+        <!-- 高德地图key -->
+        <meta-data android:name="com.amap.api.v2.apikey"
+                   android:value="e949c9cd008be08e52b4cf9d6249f5a4" />
+        <!-- 主菜单 -->
+        <activity android:name=".homePage.IndexActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--通讯录-->
+        <activity android:name=".service.smsManager.SendSms" />
+        <activity android:name=".contacts.ContactsActivity"/>
+        <activity android:name=".contacts.ContactsActivity2"/>
+        <activity android:name=".contacts.ContactsInAllActivity"/>
+        <activity android:name=".contacts.CallRecordActivity"/>
+        <activity android:name=".contacts.SmsRecordActivity"/>
+        <!--启动新activity-->
+        <activity android:name=".intent.IntentsTest"/>
+        <activity android:name=".intent.ForResultActivity"/>
+        <activity android:name=".intent.SecondActivity">
+            <intent-filter>
+                <action android:name="com.j.intent.SECOND_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".amap.AMapActivity"/>
+        <activity android:name=".images.PlaneActivity"/>
+        <activity android:name=".ui.hello.PureJavaUIActivity"/>
+        <activity android:name=".ui.hello.MixControlUIActivity"/>
+        <activity android:name=".ui.hello.BallActivity"/>
+        <activity android:name=".ui.layout.FrameLayoutActivity"/>
+        <activity android:name=".ui.layout.GridLayoutActivity"/>
+        <activity android:name=".ui.textViews.Analog_Digital_Clock"/>
+        <activity android:name=".ui.textViews.ChronometerTest"/>
+        <activity android:name=".images.BitAssetManagerActivity"/>
+        <activity android:name=".images.AnimationPandaActivity"/>
+        <activity android:name=".images.CanvasViewTest"/>
+        <activity android:name=".images.HandDrawTest"/>
+        <activity android:name=".images.PinBallActivity"/>
+        <activity android:name=".images.BlastActivity"/>
+        <activity android:name=".activity.Hello"/>
+        <activity android:name=".ui.layout.TableLayoutActivity2"/>
+        <activity android:name=".ui.listView.ListView_SimpleAdapter"/>
+        <activity android:name=".ui.listView.ListView_BaseAdapter"/>
+        <activity android:name=".ui.listView.GridView_SimpleAdapter2"/>
+        <activity android:name=".ui.dialog.AlertDialogTest2"/>
+        <activity android:name=".ui.dialog.PopupWindowTest2"/>
+        <activity android:name=".activity.TabActivityTest"/>
+        <activity android:name=".contacts.TestDrawActivity"/>
+        <activity android:name=".homePage.ThemeStyleActivity"/>
+        <activity android:name=".images.BitmapBrowserActivity"/>
+        <activity android:name=".provider.MediaProviderActivity"/>
+        <activity android:name=".service.FirstServiceTest"/>
+        <activity android:name=".service.telephonyManager.TelephonyManagerTest"/>
+        <activity android:name=".media.SoundPoolTest"/>
+        <activity android:name=".opengl.PolygonTest"/>
+        <activity android:name=".opengl.RotatePolygonTest"/>
+        <activity android:name=".opengl.Simple3DTest"/>
+        <activity android:name=".opengl.Texture3DTest"/>
+        <activity android:name=".sensor.SensorActivity"/>
+        <activity android:name=".sensor.CompassActivity"/>
+        <activity android:name=".sensor.GradienterActivity"/>
+        <activity android:name=".ui.layout.RelativeLayoutTest"/>
+        <activity android:name=".ui.textViews.RadioButton_CheckBox"/>
+        <activity android:name=".ui.listView.ListView_Entries"/>
+        <activity android:name=".ui.listView.ListView_ArrayAdapter"/>
+        <activity android:name=".ui.layout.LinearLayoutActivity"/>
+        <activity android:name=".ui.layout.TableLayoutActivity"/>
+        <activity android:name=".ui.textViews.TextViewTest"/>
+        <activity android:name=".ui.textViews.TextViewTest2"/>
+        <activity android:name=".ui.textViews.EditViewInputUITest"/>
+        <activity android:name=".ui.textViews.ButtonTest"/>
+        <activity android:name=".ui.textViews.Button9PatchTest"/>
+        <activity android:name=".ui.textViews.ToggleButton_Switch"/>
+        <activity android:name=".ui.imageView.ImageViewTest"/>
+        <activity android:name=".ui.imageView.ImageButtonZoomButton"/>
+        <activity android:name=".ui.imageView.QuickContactBadgeTest"/>
+        <activity android:name=".ui.listView.GridView_SimpleAdapter1"/>
+        <activity android:name=".ui.listView.AutoCompleteTextViewTest"/>
+        <activity android:name=".ui.listView.ExpendableListViewTest"/>
+        <activity android:name=".ui.listView.SpinnerTest"/>
+        <activity android:name=".ui.listView.AdapterViewFlipperTest"/>
+        <activity android:name=".ui.listView.StackViewTest"/>
+        <activity android:name=".ui.progressBar.ProgressBarTest"/>
+        <activity android:name=".ui.progressBar.TitleProgressBarTest"/>
+        <activity android:name=".ui.progressBar.SeekBarRatingBarTest"/>
+        <activity android:name=".ui.viewAnimator.TextSwitcherTest"/>
+        <activity android:name=".ui.viewAnimator.ImageSwitcherTest"/>
+        <activity android:name=".ui.miscellaneous.ToastTest"/>
+        <activity android:name=".ui.miscellaneous.CalendarViewTest"/>
+        <activity android:name=".ui.miscellaneous.DatePickerTimePicker"/>
+        <activity android:name=".ui.miscellaneous.NumberPickerTest"/>
+        <activity android:name=".ui.miscellaneous.SearchViewTest"/>
+        <activity android:name=".ui.miscellaneous.TabHostTest"/>
+        <activity android:name=".ui.miscellaneous.ScrollViewTest"/>
+        <activity android:name=".ui.miscellaneous.NotificationTest"/>
+        <activity android:name=".ui.miscellaneous.NotificationTest2"/>
+        <activity android:name=".ui.dialog.AlertDialogTest"/>
+        <activity android:name=".ui.dialog.DialogThemeTest"
+                  android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".ui.dialog.PopupWindowTest"/>
+        <activity android:name=".ui.dialog.DateTimePickerDialog"/>
+        <activity android:name=".ui.dialog.ProgressDialogTest"/>
+        <activity android:name=".ui.menu.MenuTest"/>
+        <activity android:name=".ui.actionBar.ActionBarTest"/>
+        <activity android:name=".ui.actionBar.ActionItemTest"/>
+        <activity android:name=".ui.actionBar.ActionViewTest"/>
+        <activity android:name=".ui.actionBar.ActionBarTabTest"/>
+        <activity android:name=".ui.actionBar.ActionBarDropDownTest"/>
+        <activity android:name=".activity.PreferenceActivityTest"/>
+        <activity android:name=".activity.ExpandableListActivityTest"/>
+        <activity android:name=".activity.ForResult"/>
+        <activity android:name=".activity.SelectCityActivity"/>
+        <activity android:name=".fragment.book.BookFragmentTest"/>
+        <activity android:name=".intent.ComponentAttrTest"/>
+        <activity android:name=".intent.ComponentAttrTest2"/>
+
+        <activity android:name=".intent.ActionAttrTest"/>
+        <activity android:name=".intent.ActionAttrTest2">
+            <intent-filter>
+                <action android:name="com.j.intent.ACTION_ATTR_ACTIVITY2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".intent.ActionCategoryAttrTest"/>
+        <activity android:name=".intent.ActionCategoryAttrTest2">
+            <intent-filter>
+                <action android:name="com.j.intent.ACTION_CATEGORY_ATTR_ACTIVITY2_ACTION"/>
+                <category android:name="com.j.intent.ACTION_CATEGORY_ATTR_ACTIVITY2_CATEGORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".intent.ReturnHomeActivity"/>
+        <activity android:name=".intent.SysActionTest"/>
+        <activity android:name=".intent.DataTypeOverrideTest"/>
+        <activity android:name=".intent.ActionDataTest"/>
+        <activity android:name=".intent.tab.IntentTabTest"/>
+        <activity android:name=".intent.tab.CalledActivity"/>
+        <activity android:name=".intent.tab.BeCallActivity"/>
+        <activity android:name=".intent.tab.NoCallActivity"/>
+        <activity android:name=".db_io.sharedPreferences.UseCountActivity"/>
+        <activity android:name=".db_io.sharedPreferences.SharedPreferencesActivity"/>
+        <activity android:name=".db_io.sharedPreferences.ReadOtherPreferences"/>
+        <activity android:name=".db_io.file.FileTest"/>
+        <activity android:name=".db_io.file.SdFileTest"/>
+        <activity android:name=".db_io.file.SDFileExplorer"/>
+        <activity android:name=".db_io.sqlite.SqliteTest"/>
+        <activity android:name=".db_io.sqliteOpenHelper.DictActivity"/>
+        <activity android:name=".db_io.sqliteOpenHelper.DictResultActivity"/>
+        <activity android:name=".db_io.tts.TextToSpeechTest"/>
+        <activity android:name=".db_io.gesture.GestureTest"/>
+        <activity android:name=".db_io.gesture.GestureZoom"/>
+        <activity android:name=".db_io.gesture.GestureFlip"/>
+        <activity android:name=".db_io.gesture.AddGesture"/>
+        <activity android:name=".db_io.gesture.RecogniseGesture"/>
+        <activity android:name=".provider.FirstResolverActivity"/>
+        <activity android:name=".provider.dict.DictResolverActivity"/>
+        <activity android:name=".provider.dict.DictResolverResultActivity"/>
+        <activity android:name=".provider.ContactProviderActivity"/>
+        <activity android:name=".provider.ContentObserverMonitorSMS"/>
+        <activity android:name=".service.BindServiceTest"/>
+        <activity android:name=".service.IntentServiceTest"/>
+        <activity android:name=".service.aidl.AIDLClient"/>
+        <activity android:name=".service.aidl.ComplexClient"/>
+        <activity android:name=".service.smsManager.GroupSendSms"/>
+        <activity android:name=".service.audioManager.AudioManagerTest"/>
+        <activity android:name=".service.vibrator.VibratorTest"/>
+        <activity android:name=".service.alarmManager.AlarmTest"/>
+        <activity android:name=".service.alarmManager.AlarmActivity"/>
+        <activity android:name=".receiver.MyReceiverTest"/>
+        <activity android:name=".receiver.SortedBroadcastTest"/>
+        <activity android:name=".receiver.MusicBox"/>
+        <activity android:name=".media.VideoViewTest"/>
+        <activity android:name=".activity.LifeCycle"/>
+        <activity android:name=".ui.listView.extendsArrayAdapter.fruit.FruitActivity"/>
+        <activity android:name=".ui.listView.extendsArrayAdapter.chat.MsgActivity"/>
+        <activity android:name=".ui.layout.RelativeLayoutTest2"/>
+        <activity android:name=".ui.layout.RelativeLayoutTest3"/>
+        <activity android:name=".fragment.simple.SimpleFragmentTest"/>
+        <activity android:name=".fragment.news.NewsActivity"/>
+        <activity android:name=".fragment.news.NewsContentActivity"/>
+
+        
+        
+        <provider
+            android:exported="true"
+            android:authorities="com.j.provider.FirstProvider"
+            android:name=".provider.FirstProvider"/>
+        <provider
+            android:exported="true"
+            android:authorities="com.j.provider.dict.DictProvider"
+            android:name=".provider.dict.DictProvider"/>
+
+
+
+        <service android:name=".service.FirstService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.j.service.FirstService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.BindService">
+            <intent-filter>
+                <action android:name="com.j.service.BIND_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyService"/>
+        <service android:name=".service.MyIntentService"/>
+        <service android:name=".service.aidl.AIDLService">
+            <intent-filter>
+                <action android:name="com.j.service.AIDL.AIDL_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.aidl.ComplexService">
+            <intent-filter>
+                <action android:name="com.j.service.AIDL.COMPLEX_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name=".receiver.MusicService"/>
+        <service android:name=".receiver.sys.LaunchService"/>
+
+
+
+        <receiver android:name=".receiver.MyReceiver">
+            <intent-filter>
+                <action android:name="com.j.broadcastReceiver.MyReceiver"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.SortedBroadcast1">
+            <intent-filter android:priority="20">
+                <action android:name="com.j.broadcastReciver.SORTED_BROADCAST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.SortedBroadcast2">
+            <intent-filter android:priority="0">
+                <action android:name="com.j.broadcastReciver.SORTED_BROADCAST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.sys.LaunchReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.sys.SmsReceiver">
+            <intent-filter android:priority="800">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.sys.BatteryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/dateTimePickerDialog_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff18cb"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/datePickerDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开日期选择对话框：DatePickerDialog"/>
+    <Button
+        android:id="@+id/timePickerDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开时间选择对话框：TimePickerDialog"/>
+</LinearLayout>

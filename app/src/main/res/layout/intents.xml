@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Intents_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent打开Activity"
+        />
+
+    <Button
+        android:id="@+id/Intents_pending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PendingIntent打开Activity"
+        />
+
+    <Button
+        android:id="@+id/Intents_sysAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PendingIntent打开系统服务"
+        />
+
+    <EditText
+        android:id="@+id/Intents_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入名字"
+        />
+
+    <EditText
+        android:id="@+id/Intents_PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号码"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/Intents_forResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册,  forResult"
+        />
+
+</LinearLayout>

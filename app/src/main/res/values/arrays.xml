@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auction_list">
+        <item>查看竞得物品</item>
+        <item>浏览流拍物品</item>
+        <item>管理物品种类</item>
+        <item>管理物品</item>
+        <item>浏览拍卖物品</item>
+        <item>查看自己的竞标</item>
+    </string-array>
+    <string-array name="gender_name_list">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="gender_value_list">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="light_strength_list">
+        <item>弱光</item>
+        <item>中等</item>
+        <item>强光</item>
+    </string-array>
+    <string-array name="light_value_list">
+        <item>weak</item>
+        <item>medium</item>
+        <item>strong</item>
+    </string-array>
+    <string-array name="list_view_entrties_books">
+        <item>疯狂的Java讲义</item>
+        <item>疯狂的Ajax讲义</item>
+        <item>疯狂的XML讲义</item>
+        <item>疯狂的Android讲义</item>
+    </string-array>
+</resources>

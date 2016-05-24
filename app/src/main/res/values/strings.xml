@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">我为android狂</string>
+    <string name="action_settings">Settings</string>
+    <drawable name="MenuBackgroundColor">#ff9dffbf</drawable>
+    <drawable name="SmsBackgroundColor">#ffffe85e</drawable>
+    <string name="title_activity_test">testActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="sensor_orientation">方向传感器返回的值</string>
+    <string name="sensor_gyro">陀螺仪传感器返回的值</string>
+    <string name="sensor_magnetic">磁场传感器返回的值</string>
+    <string name="sensor_gravity">重力传感器返回的值</string>
+    <string name="sensor_linearAcc">线性加速度传感器返回的值</string>
+    <string name="sensor_temperature">温度传感器返回的值</string>
+    <string name="sensor_light">光传感器返回的值</string>
+    <string name="sensor_pressure">压力传感器返回的值</string>
+
+    <string name="red_title">红色</string>
+    <string name="blue_title">蓝色</string>
+    <string name="green_title">绿色</string>
+    <string name="font_size">字体大小</string>
+    <string name="font_color">字体颜色</string>
+    <string name="plain_item">普通菜单项</string>
+    <string name="font_10">10号字体</string>
+    <string name="font_12">12号字体</string>
+    <string name="font_14">14号字体</string>
+    <string name="font_16">16号字体</string>
+    <string name="font_18">18号字体</string>
+</resources>

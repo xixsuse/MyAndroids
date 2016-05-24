@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ToggleButton
+        android:textOff="关闭重力传感"
+        android:textOn="打开重力传感"
+        android:checked="false"
+        android:id="@+id/plane_toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/plane_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<LinearLayout
+    android:id="@+id/linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/SmsBackgroundColor"
+    android:gravity="center_vertical|right">
+
+    <EditText
+        android:id="@+id/sms_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="手机号"
+        android:phoneNumber="true"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/sms_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="短信内容"/>
+
+    <Button
+        android:id="@+id/sms_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送短信"/>
+</LinearLayout>
+
